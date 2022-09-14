@@ -1,0 +1,45 @@
+ public static void main(String[] args) {
+      Scanner input = new Scanner (System.in);
+      String jalur_masuk,golongan,DSP,SPP,SBMPTN,SNMPTN,Mandiri,A,B,C;
+      
+        System.out.println("Jalur masuk: ");
+        System.out.println("1.SBMPTN");
+        System.out.println("2.SNMPTN");
+        System.out.println("3.Mandiri");
+        System.out.print("Masukkan pilihan: ");
+        jalur_masuk=input.next();
+        
+        System.out.println("Golongan pendapatan: ");
+        System.out.println("A");
+        System.out.println("B");
+        System.out.println("C");
+        System.out.print("Masukkan pilihan: ");
+        golongan=input.next();
+        
+        if(jalur_masuk.equalsIgnoreCase("SBMPTN")&&golongan.equalsIgnoreCase("A")){
+            System.out.println("DSP=5jt \nSPP=500  ribu");
+        }else if(jalur_masuk.equalsIgnoreCase("SBMPTN")&&golongan.equalsIgnoreCase("B")){
+            System.out.println("DSP=15jt \nSPP=1jt");
+        }else if(jalur_masuk.equalsIgnoreCase("SBMPTN")&&golongan.equalsIgnoreCase("C")) {
+            System.out.println("DSP=30jt \nSPP=2jt");
+        }else if(jalur_masuk.equalsIgnoreCase("SNMPTN")&&golongan.equalsIgnoreCase("A")){
+            System.out.println("DSP=7jt \nSPP=500  ribu");
+        }else if(jalur_masuk.equalsIgnoreCase("SNMPTN")&&golongan.equalsIgnoreCase("B")){
+            System.out.println("DSP=17jt \nSPP=1jt");
+        }else if(jalur_masuk.equalsIgnoreCase("SNMPTN")&&golongan.equalsIgnoreCase("C")) {
+            System.out.println("DSP=35jt \nSPP=2jt");  
+        }else if(jalur_masuk.equalsIgnoreCase("Mandiri")&&golongan.equalsIgnoreCase("A")){
+            System.out.println("DSP=10jt \nSPP=1jt");
+        }else if(jalur_masuk.equalsIgnoreCase("Mandiri")&&golongan.equalsIgnoreCase("B")){
+            System.out.println("DSP=25jt \nSPP=2jt");
+        }else if(jalur_masuk.equalsIgnoreCase("Mandiri")&&golongan.equalsIgnoreCase("C")) {
+            System.out.println("DSP=50jt \nSPP=3jt");
+        }else{
+        
+        }   
+
+    
+    } 
+        
+    
+}
